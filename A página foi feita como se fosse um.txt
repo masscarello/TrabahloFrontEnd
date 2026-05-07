@@ -1,0 +1,7 @@
+A página foi feita como se fosse um pequeno portal de notícias, usando HTML, CSS e JavaScript juntos. O HTML organiza a notícia sobre pinguins, com título, imagem, texto e links para fontes externas.
+
+No CSS, ficou responsável por deixar tudo mais bonito e organizado, definindo cores, espaçamentos e deixando a página adaptada para celular e computador. Também foi criado um menu simples pra simular outras partes do site.
+
+Já no JavaScript, foi colocada uma interação simples: um botão que mostra e esconde curiosidades sobre os pinguins, deixando a página mais dinâmica.
+
+No geral, a ideia foi deixar tudo bem organizado, fácil de ler e com uma interação simples pra não ficar uma página “parada”.
