@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Notícias - Vida Selvagem</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f6f9;
+    }
+
+    header {
+      background-color: #0f4c81;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #083358;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #145da0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #0f4c81;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #0f4c81;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #145da0;
+    }
+
+    #extra {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #e8f1f8;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #083358;
+      color: white;
+      margin-top: 20px;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Portal Vida Selvagem</h2>
+</header>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Animais</a>
+  <a href="#">Natureza</a>
+  <a href="#">Curiosidades</a>
+</nav>
+
+<div class="container">
+
+  <h1>Colônias de pinguins surpreendem cientistas com aumento populacional na Antártida</h1>
+
+  <img src="https://s2-g1.glbimg.com/3IAv8QPiTvMpWwxXOl7IgiyN_sM=/0x0:2100x1404/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/2/0/fBuIs0T82TX1kbZ3fphQ/ap23235711173825.jpg" alt="Pinguins na Antártida">
+
+  <p>
+    Pesquisadores registraram um aumento inesperado em algumas colônias de pinguins na Antártida. 
+    O fenômeno chamou a atenção da comunidade científica, que estuda fatores ambientais e mudanças no ecossistema polar.
+  </p>
+
+  <p>
+    Segundo os especialistas, variações nas correntes oceânicas e disponibilidade de alimento podem estar influenciando positivamente algumas espécies.
+  </p>
+
+  <button class="btn" onclick="toggleInfo()">Mostrar/Ocultar curiosidades</button>
+
+  <div id="extra">
+    <p>
+      Curiosidade: Pinguins podem nadar a mais de 35 km/h e passam até 75% do tempo na água.
+    </p>
+
+    <a href="https://www.nationalgeographic.com/animals" target="_blank">Fonte: National Geographic</a><br>
+    <a href="https://www.bbc.com/news" target="_blank">Fonte: BBC News</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Portal Vida Selvagem
+</footer>
+
+<script>
+  function toggleInfo() {
+    const extra = document.getElementById("extra");
+    if (extra.style.display === "none" || extra.style.display === "") {
+      extra.style.display = "block";
+    } else {
+      extra.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
